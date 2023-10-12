@@ -36,6 +36,7 @@
 .wrapper__instant {
     display: flex;
     align-items: center;
+    margin-left:2px;
 }
 
 .instant__info {

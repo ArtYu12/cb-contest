@@ -408,9 +408,9 @@ export default function Home() {
                                         <span className={style_guides.guide__b}>application/json </span>
                                     </li>
                                     <li className={style_guides.guide__main__item__container__list__item}>
-                    <span className={style_guides.guide__b}>
-                      application/x-www-form-urlencoded
-                    </span>
+                                        <span className={style_guides.guide__b}>
+                                        application/x-www-form-urlencoded
+                                        </span>
                                     </li>
                                     <li className={style_guides.guide__main__item__container__list__item}>
                                         <span className={style_guides.guide__b}>multipart/form-data</span>
