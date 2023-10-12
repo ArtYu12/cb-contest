@@ -1,0 +1,246 @@
+.section__instant {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--slide-background);
+    margin-top: 120px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instant__block {
+    width: 410px;
+    padding: 0px 45px 0px 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: linear-gradient(340.03deg, #FAACA8 8.42%, #DDD6F3 91.45%);
+    height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.instant__block img {
+    width: 100%;
+}
+
+.wrapper__instant {
+    display: flex;
+    align-items: center;
+}
+
+.instant__info {
+    padding: 61px 122px;
+}
+
+.instant__title h1 {
+    width: 330px;
+    color: var(--blue);
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.instant__title p {
+    width: 500px;
+    color: var(--white);
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.instant__subtitle {
+    margin-top: 32px;
+    color: var(--white);
+    width: 365px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.instant__btn {
+    margin-top: 32px;
+    width: fit-content;
+    background: var( --blue);
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 900px;
+    padding: 0px 42px;
+
+}
+
+.instant__btn a {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.slider__line {
+    width: 4px;
+    border-radius: 90px;
+    background: var(--white24);
+    height: 100px;
+}
+
+.slider__line__active {
+    width: 4px;
+    border-radius: 90px;
+    background: var(--accent);
+    height: 100px;
+}
+
+.count {
+    color: var(--count-color);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 16.8px */
+    text-transform: uppercase;
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+    .section__instant {
+        height: 100%;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .wrapper__instant {
+        flex-direction: column;
+    }
+
+    .wrapper__instant {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .instant__info {
+        padding: 0px 0px;
+    }
+
+    .instant__info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .instant__title h1 {
+        width: 510px;
+    }
+
+    .instant__title p {
+        width: 500px;
+    }
+
+    .instant__subtitle {
+        text-align: center;
+        width: 500px;
+    }
+
+    .instant__btn {
+        text-align: center;
+        margin-top: 32px;
+        width: 67%;
+        padding: 14px 34px;
+    }
+
+    .instant__btn a {
+        font-size: 18px;
+    }
+    .slider {
+        flex-direction: row;
+        margin-top: 32px;
+    }
+    .slider__line {
+        width: 80px;
+        height: 4px;
+    }
+    .slider__line__active {
+        width: 80px;
+        height: 4px;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .section__instant {
+        height: 100%;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .instant__block {
+        width: 335px;
+        padding: 93.412px 28.832px 93.048px 28.145px;
+        border-radius: 24px;
+        height: 335px;
+    }
+
+    .instant__block img {
+        width:  332.934px;
+    }
+
+    .instant__info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .instant__title h1 {
+        width: 500px;
+        font-size: 32px;
+    }
+
+    .instant__title p {
+        width: 500px;
+        font-size: 32px;
+    }
+
+    .instant__subtitle {
+        width: 72%;
+        font-size: 18px;
+    }
+
+    .instant__btn {
+        padding: 12px 32px;
+    }
+
+    .instant__btn a {
+        font-size: 18px;
+    }
+
+}
+
+.background1 {
+    background: linear-gradient(207deg, #FCB69F 6.91%, #FFECD2 92.45%)
+}
+
+.background2 {
+    background: linear-gradient(0deg, #C2E9FB -16.6%, #A1C4FD 106.15%)
+}

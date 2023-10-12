@@ -1,0 +1,443 @@
+.features__card1 {
+    width: 100%;
+    display: inline-flex;
+    padding: 42px 56px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 40px;
+    background: var(--background-secondary-color);
+}
+
+.features__coins__image {
+    display: none;
+}
+
+.features__card1__title {
+    color: var(--dark);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -1.26px;
+    margin-bottom: 20px;
+}
+
+.features__card1__description {
+    color: var(--dark80);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 42px;
+}
+
+.features__card1__description b {
+    font-weight: 500;
+}
+
+.features__card1__description span {
+    color: var(--blue);
+
+    cursor: pointer;
+}
+
+.features__card1__assets {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.features__card1__assets__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__card1__assets__item:hover>.features__card1__assets__item__name {
+    color: var(--dark);
+}
+
+.features__card1__assets__item:hover>img {
+    transform: scale(1.1);
+}
+
+.features__card1__assets__item img {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.features__card1__assets__item__name {
+    color: var(--dark40);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.blocks__container {
+    box-sizing: border-box;
+    margin-top: 25px;
+}
+
+.blocks__container__minor__block {
+    box-sizing: border-box;
+    width: 100%;
+    background: var(--background-secondary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.blocks__container__main__block {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background: var(--background-secondary-color);
+}
+
+.blocks__container__minor {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocks__container__minor__video__container {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.blocks__container__main__video__conatiner,
+.blocks__bottom__main__video {
+    margin: 0 auto;
+    width: 100%
+}
+
+.blocks__container__main__video__conatiner video,
+.blocks__bottom__main__video video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.blocks__container__minor__video__container video {
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.blocks__container__minor__text__descriprion span {
+    color: var(--accent);
+}
+
+.blocks__container__minor__text__title {
+    color: var(--dark);
+    font-style: normal;
+    font-weight: 629;
+    line-height: 110%;
+    letter-spacing: -1.26px;
+}
+
+.blocks__container__minor__text__descriprion,
+.blocks__bottom__main__description {
+    color: var(--description);
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+
+
+
+.blocks__bottom {
+    width: 100%;
+}
+
+.blocks__bottom__main,
+.blocks__bottom__minor {
+    border-radius: 32px;
+}
+
+.blocks__bottom__main {
+    margin-right: 20px;
+    background: var(--background-secondary-color);
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blocks__bottom__minor {
+    background: var(--background-secondary-color);
+    flex: 1;
+}
+
+.blocks__bottom__main__video video {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:1121px) {
+    .blocks__bottom__minor__video {
+        height: 65%;
+        object-fit: cover;
+        width: 100%;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+
+    .blocks__bottom__minor__video video {
+        object-fit: cover;
+        border-radius: 24px;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .blocks__bottom__minor__video {
+        height: 65%;
+        width: 100%;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+
+    .blocks__bottom__minor__video video {
+        object-fit: cover;
+        border-radius: 24px;
+        height: auto;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+
+
+@media screen and (min-width:600px) {
+    .features {
+        padding: 9rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .features {
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .features {
+        padding: 2rem 2rem 80px 2rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .features {
+        padding: 1rem 1rem 80px 1rem;
+    }
+}
+
+@media screen and (min-width:990px) {
+
+    .blocks__container__minor__block,
+    .features__card1,
+    .blocks__container__main__block {
+        border-radius: 32px;
+    }
+
+    .blocks__container {
+        display: flex;
+    }
+
+    .blocks__bottom__main,
+    .blocks__bottom__minor {
+        border-radius: 32px;
+    }
+
+    .blocks__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-top: 24px;
+    }
+
+    .blocks__bottom__main {
+        padding: 0 42px 42px 42px;
+    }
+
+    .blocks__bottom__minor {
+        padding: 42px;
+    }
+
+    .blocks__bottom__main {
+        width: 64%;
+    }
+
+    .blocks__bottom__minor {
+        width: 27%;
+    }
+
+    .blocks__container__minor {
+        width: 40%;
+    }
+
+    .blocks__container__minor__block:last-child {
+        margin: 20px 0 0 0;
+    }
+
+    .blocks__container__main__block {
+        width: 58%;
+    }
+
+    .blocks__container__main__video__conatiner video {
+        border-radius: 32px;
+    }
+}
+
+@media screen and (max-width:989px) {
+
+    .blocks__bottom__main,
+    .blocks__bottom__minor {
+        border-radius: 24px;
+    }
+
+    .blocks__container__minor__block,
+    .blocks__container__main__block,
+    .features__card1 {
+        border-radius: 24px;
+    }
+
+    .blocks__bottom {
+        margin-top: 16px;
+    }
+
+    .blocks__container,
+    .blocks__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blocks__bottom__main {
+        padding: 0 32px 32px 32px;
+    }
+
+    .blocks__bottom__minor {
+        padding: 32px;
+    }
+
+    .blocks__container__minor,
+    .blocks__bottom__minor,
+    .blocks__bottom__main {
+        width: 100%;
+    }
+
+    .blocks__bottom__minor {
+        margin-top: 16px;
+    }
+
+    .blocks__container__minor__block:last-child {
+        margin: 16px 0;
+    }
+
+    .blocks__container__main__video__conatiner video {
+        border-radius: 16px;
+    }
+
+    .blocks__container__main__block {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width:1070px) {
+    .blocks__container__main__video__conatiner {
+        height: 80%;
+    }
+}
+
+@media screen and (max-width:1069px) and (min-width:990px) {
+    .blocks__container__main__video__conatiner {
+        height: 75%;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .blocks__container__minor__text__title {
+        font-size: 42px;
+        margin: 0 0 20px 0;
+    }
+
+    .blocks__container__minor__text__descriprion,
+    .features__card1__description,
+    .blocks__bottom__main__description {
+        font-size: 20px;
+    }
+
+    .blocks__container__minor__block,
+    .blocks__container__main__block,
+    .features__card1 {
+        padding: 42px 56px;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .blocks__container__minor__text__title {
+        font-size: 30px;
+        margin: 21px 0 10px 0;
+    }
+
+    .blocks__container__minor__text__descriprion,
+    .features__card1__description,
+    .blocks__bottom__main__description {
+        font-size: 16px;
+    }
+
+    .blocks__container__minor__block,
+    .blocks__container__main__block,
+    .features__card1 {
+        padding: 26px 34px;
+    }
+}
+
+@media screen and (max-width:1160px) {
+    .blocks__container__minor__text__title {
+        font-size: 21px;
+    }
+
+    .features__card1__title {
+        font-size: 21px;
+    }
+
+    .features__card1__assets {
+        display: none;
+    }
+
+    .features__card1__title {
+        margin-bottom: 10px;
+    }
+
+    .features__card1__description {
+        margin-bottom: 0;
+    }
+
+    .features__coins__image {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .features__coins__image img {
+        width: 100%;
+    }
+}
